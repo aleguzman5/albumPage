@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
         <link href="albumStyles.css" type="text/css" rel="stylesheet" />
         <style>
         .album {
@@ -11,18 +23,17 @@
         .members{
             font-style: italic;
         }
+        tr:nth-child(even){background-color:gray}
         </style>
         <title>Oasis</title>
     </head>
     <body>
+    <div class="container">
         <p>
-            <div
-                style="background-image: url(images/BeHereNow.jpg);
-                       background-repeat:no-repeat;
-                       background-position:center;
-                       background-size:350px,150px;
-                       background-attachment:scroll;
-                       height:350px">
+            <div>
+                <center>
+                <img src="images/BeHereNow.jpg" class="img-circle" style="width: 300px;">
+                </center>
             </div>
             <center>
             <div class="album">
@@ -43,10 +54,10 @@
             <li>Tony McCarroll - Drums, Percussions</li>
         </ul>
         </div>
-        <div class="tracks">
+        <div class="table-responsive">
         <center>
-            <table>
-                <caption><h3>Tracks</h3></caption>
+            <table class="table">
+                <caption style="text-align:center; color:black"><h3>Tracks</h3></caption>
             <thead>
                 <tr>
                     <th>Track #</th>
@@ -119,5 +130,6 @@
             </table>
         </center>
         </div>
+    </div>
     </body>
 </html>
